@@ -4,7 +4,7 @@ const authMiddle = require('./middlewere/auth.middle')
 const noteRoute = require('./routes/notes.route')
 const userRoute = require('./routes/user.route')
 const cors = require('cors')
-require('dotenv').config()
+
 
 const app = express()
 
@@ -23,7 +23,7 @@ app.use('/notes',noteRoute)
 
 // run http server-------------------
 
-app.listen(process.env.PORT,async()=>{
+app.listen(4500,async()=>{
     try{
         await connect
         console.log('connected db')

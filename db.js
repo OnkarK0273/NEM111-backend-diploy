@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-require('dotenv').config()
 
-const connect = mongoose.connect(process.env.MONGO)
+
+const connect = mongoose.connect('mongodb+srv://onkar:onkaratlas@cluster0.xxociih.mongodb.net/auth?retryWrites=true&w=majority')
 
 
 
